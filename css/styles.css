@@ -1,0 +1,14 @@
+@font-face {
+    font-family: GOTHIC;
+    src: url(../fonts/GOTHIC.TTF);
+}
+@font-face {
+    font-family: GOTHIC-Bold;
+    src: url(../fonts/GOTHICB.TTF);
+}
+body{
+    font-family: Gothic;
+}
+.gothicBold{
+    font-family: GOTHIC-Bold;
+}
