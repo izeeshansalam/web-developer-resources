@@ -12,3 +12,6 @@ body{
 .gothicBold{
     font-family: GOTHIC-Bold;
 }
+small{
+    color: red;
+}

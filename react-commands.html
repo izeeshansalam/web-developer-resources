@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Developer Resources - React Commands</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+
+	<!-- Css Links -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">WDR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="menu">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chrome-extensions.html">-Chrome Extensions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="vs-code-extensions.html">-VS Code Extensions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="netlify-commands.html">-Netlify Commands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="react-commands.html">-React Commands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="github-commands.html">-Github Commands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="useful-websites.html">-Useful Websites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="px-4 py-5 mb-5 text-left mt-5">
+      <h1 class="display-5 fw-bold text-center mb-3 gothicBold">React Commands</h1>
+      <div class="col-lg-6 mx-auto">
+        <ul class="list-group list-group-flush mb-2">
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> node -v <small>( to check the node version installed on your machine )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> cls <small>( clear the command prompt )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npx create-react-app appName <small>( to create new react app )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> cd folderName <small>( to change the directory )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> cd.. <small>( move to back directory )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> code . <small>( to open directory in vs code )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm run start <small>( to start the react app )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm install <small>( install node modules )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npx json-server --watch data/db.json --port 8000 <small>( to create fake rest api )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm install react-router-dom@5 <small>( to create react router dom version 5 )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> node app/FileNameWithoutExtension <small>( fire the file code using node )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm init <small>( to initialize node and create package.json file )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm install express -save <small>( install express dependencies package of node )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm uninstall express  <small>( to uninstall express package )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm install -g nodemon </li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> nodemon app.js </li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm install ejs -save </li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm install body-parser </li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm install mongoose -save </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer py-3 bg-dark fixed-bottom">
+      <div class="container">
+        <p class="text-light text-center mb-0">Copyright &copy; 2022 - Web Developer Resources - Zeeshan Salam</p>
+      </div>
+    </footer>
+
+    
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
