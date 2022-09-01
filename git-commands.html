@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Developer Resources - Git Commands</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+
+	<!-- Css Links -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">WDR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="menu">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chrome-extensions.html">-Chrome Extensions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="vs-code-extensions.html">-VS Code Extensions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="netlify-commands.html">-Netlify Commands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="react-commands.html">-React Commands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="git-commands.html">-Git Commands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="useful-websites.html">-Useful Websites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="px-4 py-5 mb-5 text-left mt-5">
+      <h1 class="display-5 fw-bold text-center mb-3 gothicBold">Git Commands</h1>
+      <div class="col-lg-6 mx-auto">
+        <ul class="list-group list-group-flush mb-2">
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git --version</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git config --global user.name userName</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git config --global user.email userEmail@domain.com</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git config user.name</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> cd pathToUrl/folderName</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> cd ..</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> pwd <small>( Present Working Directory )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> ls</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> ls -la</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> mkdir folderName</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> touch fileName <small>( create file )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> rm fileName ( remove file )</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> rmdir folderName</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> rm -rf .git <small>( if you want to delete whole .git folder )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git init</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git status</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git add fileName</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git add .	<small>( for staging all )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git add --a <small>( for staging all )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git rm --cached fileName</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git rm fileName.extension</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git mv fileName.extension fileNameRename.extension</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git commit -m "commit message here"</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git commit -a -m "Direct Commit" <small>( It commit all the changes without staging it )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log <small>( see all commits )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log --oneline <small>( see commits in one line )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log -p	<small>( tell every changes which was done )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log -p -2 <small>( number of commits show )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log --stat <small>( in short show all logs )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log --pretty=oneline <small>( it shows all logs in one line )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log --pretty=short</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log --since=2.days</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log --since=2.week</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log --since=2.months</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log --since=2.years</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log --pretty=format:"%h -- %an"</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git log --pretty=format:"%h -- %ae"</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git restore --staged fileName.extension</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git diff file.extension</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git diff</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git diff --staged file.extension</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git reset fileName.extension <small>( unstaged the files )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git checkout fileName.extension <small>( remove recent changes from file )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git checkout -- fileName.extension <small>( remove recent changes from file )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git checkout . <small>( remove recent changes from all files )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git checkout -f <small>( if you want to remove all changes and move to previous commit )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git checkout ID <small>( to move to the following ID base commit )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git checkout master <small>( move to master commit )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git revert ID <small>( shift+ : -> to get out with screen )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git reset ID <small>( to get to the following commit without deletion of files )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git reset ID --hard <small>( to get to the following commit and delete the files )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git branch branchName <small>( create branch )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git branch -a <small>( look for all branches )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git branch -v <small>( show branchName, hash and last commit )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git checkout branchName <small>( switch to other branch )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git branch -D branchName <small>( delete the branch )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git branch --merged <small>( already merged branches )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git branch --unmerged <small>( not already merged branches )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git checkout -b branchName <small>( create the branch and switch to branch )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git push origin --delete branchName <small>( delete branch from remote system )</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git merge branchName</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git push https://github.com/userName/project-xyz.git master</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git remote add origin https://github.com/userName/project-xyz.git</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git clone https://github.com/userName/zs-portfolio.git</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git remote -v</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git push origin main/BranchName</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git push -d origin BranchName</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git pull</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git pull origin main/BranchName</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> git config --global alias.st status <small>( If you want to create custom commands )</small></li>
+            
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer py-3 bg-dark fixed-bottom">
+      <div class="container">
+        <p class="text-light text-center mb-0">Copyright &copy; 2022 - Web Developer Resources - Zeeshan Salam</p>
+      </div>
+    </footer>
+
+    
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
