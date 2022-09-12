@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Developer Resources - Tailwind Installation</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+
+	<!-- Css Links -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Web Developer Resources</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="menu">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chrome-extensions.html">-Chrome Extensions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="vs-code-extensions.html">-VS Code Extensions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="netlify-commands.html">-Netlify Commands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="react-commands.html">-React Commands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="git-commands.html">-Git Commands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="other.html">-Other</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="px-4 py-5 mb-5 text-left mt-5">
+      <h1 class="display-5 fw-bold text-center mb-3 gothicBold">Tailwind Installation Process</h1>
+      <div class="col-lg-6 mx-auto">
+        <ul class="list-group list-group-flush mb-2">
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm init -y <small>This initializes the directory as a NodeJs project</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npm install -D tailwindcss postcss autoprefixer vite <small>installs required packages</small></li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> npx tailwindcss init -p</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> Create a css file <b>"style.css",</b> add it to your html and edit it with this content:
+              <br><br>
+              @tailwind base; <br>
+              @tailwind components; <br>
+              @tailwind utilities;
+            </li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> In your tailwind.config.js file replace <b>content:[],</b> with <b>content:["*"],</b></li>
+
+            <li class="list-group-item py-3"> Add <b>"start":"vite"</b> to your scripts in package.json</li>
+            <li class="list-group-item"><i class="bi bi-check2-circle text-success"></i> Run <b>npm run start</b> command to start a dev server</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer py-3 bg-dark fixed-bottom">
+      <div class="container">
+        <p class="text-light text-center mb-0">Copyright &copy; 2022 - Web Developer Resources - Zeeshan Salam</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
